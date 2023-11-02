@@ -7,3 +7,5 @@ You can see:
 - Proxies
 - Admins
 - Impl.
+
+It necessary to run all upgrades plugin functions.

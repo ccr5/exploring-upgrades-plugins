@@ -1,13 +1,9 @@
 import { ethers, upgrades } from "hardhat";
 
 async function main() {
-  const StorageV1 = await ethers.getContractFactory("StorageV1");
-  const instance = await upgrades.deployProxy(StorageV1, [1], {
-    initializer: "initialize"
-  });
-  
-  await instance.waitForDeployment();
-  console.log(await instance.getAddress())
+  const StorageV2 = await ethers.getContractFactory("StorageV2");
+  await upgrades.upgradeProxy(process.env.PROXY!, StorageV2);  
+  console.log("Storage upgraded")
 }
 
 // We recommend this pattern to be able to use async/await everywhere
