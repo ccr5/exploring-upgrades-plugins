@@ -1,0 +1,19 @@
+{
+  "name": "exploring-upgrades-plugins",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "CCR5",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "@openzeppelin/contracts-upgradeable": "^5.0.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.4",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@openzeppelin/hardhat-upgrades": "^2.3.3",
+    "ethers": "^6.8.0",
+    "hardhat": "^2.18.1",
+    "solidity-docgen": "^0.6.0-beta.36"
+  }
+}
